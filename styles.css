@@ -1,0 +1,103 @@
+body {
+    overflow-x: scroll;
+    transition: color 0.3s ease; 
+    
+    
+}
+
+nav {
+    position: fixed;  /* or 'sticky' depending on your needs */
+    top: 0;
+    width: 100%;
+    z-index: 1001; 
+}
+
+.nav-cont {
+    display:flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right:20px;
+    
+}
+
+ a {
+    color: #2DF400;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0051FF;
+}
+
+a:active {
+    color: #0051FF;
+}
+
+section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 2000px;
+    height: 1400px;
+    display: grid;
+    padding: 120px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 240px;
+}
+
+section a {
+    display: block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section img {
+    max-width: 100%;
+    max-height: 560px;
+    transition: opacity 0.25s, transform 0.25s, box-shadow 0.25s;
+    box-shadow: 0 0 10px  50% blue; 
+}
+
+h1 {
+
+ 
+    font-family: "Doto", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+h2 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+}
+
+.color1{
+    color: red;
+}
+
+.color2 {
+    color: green;
+}
+
+.color3 {
+    color: blue;
+}
+
+body.hovered img {
+    opacity: 0.1;
+}
+
+body.hovered a.hovered img {
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 0 16px rgba(255, 0, 0, .1);
+}

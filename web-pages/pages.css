@@ -1,0 +1,107 @@
+body {
+    overflow-x: scroll;
+    transition: color 0.3s ease; 
+    
+    
+}
+
+nav {
+    position: fixed;  /* or 'sticky' depending on your needs */
+    top: 0;
+    width: 100%;
+    z-index: 1001; 
+}
+
+.nav-cont {
+    display:flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right:20px;
+    
+}
+
+ a {
+    color: #2DF400;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0051FF;
+}
+
+a:active {
+    color: #0051FF;
+}
+
+h1 {
+    font-family: "Doto", sans-serif;
+    font-size: 50px;
+    
+}
+
+h2 {
+    
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+
+}
+
+h3 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+h4 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 20px;
+    line-height: 5px;
+}
+
+p {
+    padding-left: 20px;
+    padding-right: 100px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    
+}
+
+.cont-1 h3 {
+    line-height: 5px;
+}
+
+.cont-1 {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+
+#title {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+}
+
+.cont-1 img {
+    width: 50%;
+    padding-bottom: 30px;
+}
+
+.cont-2 h2 {
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 50px;
+}
+
+#sketch {
+    padding-left: 20px;
+}
+
+
+
