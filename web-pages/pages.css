@@ -103,5 +103,41 @@ p {
     padding-left: 20px;
 }
 
+.carousel-cont {
+    position: relative;
+    width: 60%;
+    margin: auto;
+    border: 5px dotted red;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+#prev-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 30px;
+    color: red;
+    opacity: 1;
+    cursor: pointer;
+}
+#next-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 30px;
+    color: red;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
 
 

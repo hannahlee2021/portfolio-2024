@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Moodify</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
     <div class = "cont-1">
         <h1 id = "title">moodify!</h1>
         <img src="../imgs-cover/moodify-cover.png">
-            <a href="https://hannahlee2021.github.io/altinterface/index.html"><h3>link</h3></a>
+            <a href="https://hannahlee2021.github.io/moodify/index.html"><h3>check me out ;+</h3></a>
             <h3>date: april 2023</h3>
             <h3>tools: html, css, js [vanilla + p5.js]</h3>
     </div>
@@ -45,6 +46,25 @@
         <p>for the new interface, i want to focus on making the experience more user friendly and clean by following the style of a more professional website style. i want to utilize design choices like colors and composition that allow for easy legibility and an overall seamless experience. right now, my inspiration for the design is derived from the cyber y2k aesthetic, with smooth, metallic tones</p>
 
         <h2>BUILD</h2>
+        <div class = "carousel-cont">
+            <i class="fa-solid fa-caret-left" id = "prev-btn"></i>
+            <i class="fa-solid fa-caret-right" id="next-btn"></i>
+            <div class = "carousel-slide">
+                <img src = "moodify-prog/instructions page 1.png" id = "lastClone">
+                <img src = "moodify-prog/progress 1.png">
+                <img src = "moodify-prog/home page 2.png">
+                <img src = "moodify-prog/player page 1.png">
+                <img src = "moodify-prog/player page 2.png">
+                <img src = "moodify-prog/player page 3.png">
+                <img src = "moodify-prog/player page 4.png">
+                <img src = "moodify-prog/player page 5.png">
+                <img src = "moodify-prog/player page 6.png">
+                <img src = "moodify-prog/instructions page 1.png">
+                <img src = "moodify-prog/progress 1.png" id = "firstClone">
+            </div>
+        </div>
+
+
 
         <h2>REFLECTION</h2>
         <h4><b>design</b></h4>
@@ -62,5 +82,6 @@
 
         
     </div>
+    <script src = "carousel.js"></script>
 </body>
 </html>

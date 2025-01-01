@@ -1,0 +1,30 @@
+**problem** 
+Enumerating objects: 33, done.
+Counting objects: 100% (33/33), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (31/31), done.
+error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400
+send-pack: unexpected disconnect while reading sideband packet
+Writing objects: 100% (33/33), 3.54 MiB | 15.71 MiB/s, done.
+Total 33 (delta 7), reused 0 (delta 0), pack-reused 0
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+
+**solution**
+When we ran git config http.postBuffer 524288000, we were essentially fixing a common issue with Git's data transmission. Here's the breakdown:
+1. What is postBuffer?
+It's like a "container" that Git uses to send data to GitHub
+The default size is usually around 1MB
+We increased it to about 500MB (524288000 bytes)
+Why it helped:
+Your repository was trying to push 3.54 MiB of data
+The default buffer might have been too small to handle this cleanly
+By increasing the buffer size, we gave Git enough "space" to send all your files in one go
+Think of it like this:
+Default setting: Trying to carry too many groceries in a small bag 🛍️
+Our fix: Getting a bigger bag that can hold everything comfortably 🎒
+This is particularly helpful for:
+First-time pushes with lots of files
+Repositories with larger files
+Situations where network conditions aren't perfect
+The Error 400 (Bad Request) was happening because the data wasn't being transmitted properly with the smaller buffer size. By increasing it, we ensured smooth transmission of all your files to GitHub! 🎉
