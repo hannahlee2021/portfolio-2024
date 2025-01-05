@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Week of Trich</title>
+</head>
+<body>
+    <nav>
+        <div class = "nav-cont"> 
+            <a href="../index.html"><span style="color:#0051FF;"><h2>web</h2></span></a>
+            <a href="#"><h2>ux</h2></a>
+            <a href="#"><h2>p5js</h2></a>
+            <a href="#"><h2>misc.</h2></a>
+            <a href="#"><h2>about</h2></a>
+            
+            
+        </div>  
+    </nav>
+
+    <div class = "cont-1">
+        <h1 id = "title">week of trich</h1>
+        <img src="../imgs-cover/nested-object-cover.png">
+            <a href="https://hannahlee2021.github.io/deeply-nested-object/"><h3>check me out ;+</h3></a>
+            <h3>date: october 2023</h3>
+            <h3>tools: html, css, js [vanilla + p5.js]</h3>
+    </div>
+
+    <div class = "cont-2">
+        <h2>OVERVIEW</h2>
+        <h4><b>what is it?</b></h4>
+        <p>a web based composition visualizing data i’ve collected over the span of a week.</p>
+        <h4><b>intent</b></h4>
+        <p>to track my relationship with trichotillomania (hair pulling disorder) on a day to day basis. some parameters i included were time, amount, and emotions.</p>
+
+        <h2>DESIGN</h2>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 600px; height: 300px;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Ffile%2F7k3vBwuS5G1Nw5c67kAFy6%2Fdeeply-nested-object%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DNJqGWAxnAGKTyZN3-1" allowfullscreen=""></iframe>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 600px; height: 300px;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2F7k3vBwuS5G1Nw5c67kAFy6%2Fdeeply-nested-object%3Ftype%3Ddesign%26node-id%3D5-81%26t%3DSZLV8PmABEbw6vOU-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D5%253A81%26mode%3Ddesign" allowfullscreen=""></iframe>
+        <br>
+        <br>
+        <p>for the layout, i wanted to retain the essence of the subject matter, which is hair, so i decided to make the background a bunch of hairs. i also found inspiration in how the hairs i pull end up falling on the floor, and so i wanted to integrate that into the design as well.</p>
+
+        <h2>BUILD</h2>
+        <div class = "carousel-cont">
+            <i class="fa-solid fa-caret-left" id = "prev-btn"></i>
+            <i class="fa-solid fa-caret-right" id="next-btn"></i>
+            <div class = "carousel-slide">
+                <img src = "trich-prog/4.png" id = "lastClone">
+                <img src = "trich-prog/1.png">
+                <img src = "trich-prog/2.png">
+                <img src = "trich-prog/3.png">
+                <img src = "trich-prog/4.png">
+                <img src = "trich-prog/1.png" id = "firstClone">
+            </div>
+        </div>
+
+
+
+        <h2>REFLECTION</h2>
+        <h4><b>design</b></h4>
+        <p>i found that coming up with the visual design for this piece quite simple due to having a big passion and familiarity with the concept!</p>
+        <br>
+        <h4><b>build</b></h4>
+        <p>while coming up with the design was a fast process, developing it was a different story... i ran into a few roadblocks throughout the process. for starters, with trying to execute the whole falling background, i first created the animation on <a href="https://editor.p5js.org/leeh939/full/3AbuENm3z">p5js</a>, using an old icon i made as the placeholder image. however, i encountered some issues with rendering the sketch onto the html page in a seamless manner, but after playing around with the viewport sizing and z-indexes, i was able to solve this issue. another issue i ran into was the hover function displaying the DOM injected data. i initially thought about using css properties to get this done, but seeing as it was not working, i decided to use event handlers and functions to make this feature work. my functions are quite repetitive, so i do want to come back to the code and clean it up a bit in the future!
+        </p>
+        <br>
+        <h4><b>conclusion</b></h4>
+        <p>while there are some things i would have liked to achieved (making the red hairs freeze in place alongside the data container when hovered), i am still proud of the final product, especially since there was a time limit of 1 week. i was able to learn about using javascript to inject data into the DOM as well as implement it into this piece so that was very exciting and rewarding! this project has allowed me to really inspect the relationship i have with this disorder, and so the experience was quite enlightening and i am grateful for that.</p>
+
+        
+    </div>
+    <script src = "carousel.js"></script>
+</body>
+</html>

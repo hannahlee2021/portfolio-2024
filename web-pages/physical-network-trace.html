@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Physical Network Trace</title>
+</head>
+<body>
+    <nav>
+        <div class = "nav-cont"> 
+            <a href="../index.html"><span style="color:#0051FF;"><h2>web</h2></span></a>
+            <a href="#"><h2>ux</h2></a>
+            <a href="#"><h2>p5js</h2></a>
+            <a href="#"><h2>misc.</h2></a>
+            <a href="#"><h2>about</h2></a>
+            
+            
+        </div>  
+    </nav>
+
+    <div class = "cont-1">
+        <h1 id = "title">physical network trace</h1>
+        <img src="../imgs-cover/network-trace-cover.png">
+            <a href="https://hannahlee2021.github.io/physical-network-trace/"><h3>check me out ;+</h3></a>
+            <h3>date: september 2023</h3>
+            <h3>tools: html, css, js [vanilla]</h3>
+    </div>
+
+    <div class = "cont-2">
+        <h2>OVERVIEW</h2>
+        <h4><b>what is it?</b></h4>
+        <p>a web based collage of different locations based on the traces ip addresses from nyc to tongji university in shanghai</p>
+        <h4><b>intent</b></h4>
+        <p>to visualize the route of a network request between a client and server in a way that is interactive and serves to portray different locations</p>
+
+        <h2>DESIGN</h2>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 600px; height: 300px;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJDp0E6r00xOHTx0FyQxixT%2Fphysical-trace-network%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DNJqGWAxnAGKTyZN3-1" allowfullscreen=""></iframe>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 600px; height: 300px;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FJDp0E6r00xOHTx0FyQxixT%2Fphysical-trace-network%3Ftype%3Ddesign%26node-id%3D156-2%26t%3DHGxobBgjVtdrtUlU-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D156%253A2%26mode%3Ddesign" allowfullscreen=""></iframe>
+        <br>
+        <br>
+        <p>for the layout, i was inspired by the form of a receipt, where information of a singular product is portrayed side by side and then the culmination of the order is listed at the bottom. the tracing of a network also seems similar to creating a travel itinerary, and so i wanted to follow that spirit in creating the design for this work.</p>
+
+        <h2>BUILD</h2>
+        <div class = "carousel-cont">
+            <i class="fa-solid fa-caret-left" id = "prev-btn"></i>
+            <i class="fa-solid fa-caret-right" id="next-btn"></i>
+            <div class = "carousel-slide">
+                <img src = "network-trace-prog/7.png" id = "lastClone">
+                <img src = "network-trace-prog/1.png">
+                <img src = "network-trace-prog/2.png">
+                <img src = "network-trace-prog/3.png">
+                <img src = "network-trace-prog/4.png">
+                <img src = "network-trace-prog/5.png">
+                <img src = "network-trace-prog/6.png">
+                <img src = "network-trace-prog/7.png">
+                <img src = "network-trace-prog/1.png" id = "firstClone">
+            </div>
+        </div>
+
+
+
+        <h2>REFLECTION</h2>
+        <h4><b>design</b></h4>
+        <p>i initially started off with a different idea, which was creating a linear map stretched across the screen, but while scrolling on pinterest as per my usual routine, i found a few images (in the moodboard of the figma file) that sort of sparked inspiration in me to change up my idea. having familiarity with figma now, it was pretty simple creating the assets and putting together the vision i had in mind. i did have some issues with deciding how the music file should be laid out, making a lot of tweaks throughout the design process, but overall, i am glad with the solution i ended up with!</p>
+        <br>
+        <h4><b>build</b></h4>
+        <p>integrating the flexboxes to fit the design i created was a bit of a challenge at first, due to not having too much familiarity with it, but the more i practiced, the more comfortable i became and so i am proud to say that i am now quite comfortable with utalizing flexboxes! in addition, creating the javascript event in which when each ip address is pressed, it displays the assigned asset and then gets removed when pressed again, was a challenge as well. i went through a few iterations on my approach to this, but i ended up going with using event handlers. and well, formatting the other elements and whatnot was quite repetitive but also very relaxing and fun!
+        </p>
+        <br>
+        <h4><b>conclusion</b></h4>
+        <p>i am proud of myself for being able to debug the issues i had as well as being able to materialize my vision into a reality! i also learned what network traces were and so that was really exciting!</p>
+
+        
+    </div>
+    <script src = "carousel.js"></script>
+</body>
+</html>
