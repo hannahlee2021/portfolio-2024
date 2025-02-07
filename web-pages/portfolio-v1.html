@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Portfolio V1</title>
+</head>
+<body>
+    <nav>
+        <div class = "nav-cont"> 
+            <a href="../index.html"><span style="color:#0051FF;"><h2>web</h2></span></a>
+            <a href="#"><h2>ux</h2></a>
+            <a href="#"><h2>p5js</h2></a>
+            <a href="#"><h2>misc.</h2></a>
+            <a href="#"><h2>about</h2></a>
+            
+            
+        </div>  
+    </nav>
+
+    <div class = "cont-1">
+        <h1 id = "title">portfolio v1</h1>
+        <img src="../imgs-cover/portfolio-one-cover.png">
+            <a href="https://hannahlee2021.github.io/portfolio-website/"><h3>check me out ;+</h3></a>
+            <h3>date: july 2023 - november 2023</h3>
+            <h3>tools: html, css, js [vanilla]</h3>
+    </div>
+
+    <div class = "cont-2">
+        <h2>OVERVIEW</h2>
+        <h4><b>what is it?</b></h4>
+        <p>a hand coded website showcasing my past, present, and future projects/works [in progress => scrapped].</p>
+        <h4><b>intent</b></h4>
+        <p>to have all my work archived in a space i can call my own instead of using a cms like this one teehee >,></p>
+
+        <h2>DESIGN</h2>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 600px; height: 300px;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Ffile%2FsjAqig9Wh7wd6LAAUG0md3%2Fportfolio-website%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DNJqGWAxnAGKTyZN3-1" allowfullscreen=""></iframe>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 600px; height: 300px;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FsjAqig9Wh7wd6LAAUG0md3%2Fportfolio-website%3Ftype%3Ddesign%26node-id%3D101-3%26t%3Dk0lrodgYK3TT4I2j-1%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26mode%3Ddesign" allowfullscreen=""></iframe>
+        <br>
+        <br>
+        <p>i was inspired by bauhaus principles for color and simplicity, as well as the minimalist and almost unfinished look of wireframes. i went through a few iteration of how i wanted the details to come together, as seen in the figma file. the logo at the sidebar also doubles as a pull out navigation bar when pressed, and this logo i designed on procreate! the shape is reminiscent of a flower, and it is an ode to my name, which means flower in japanese. for the chinese characters,the first one (一) is pronounced as “yi” in chinese, and the second one (花) is pronounced as “hana” in japanese. however, when those two words are combined in each respective language, it forms my korean name pronunciation wise (yi-ha-na).i also created a tentative design for how the site would look like on mobile devices, but that is still something i need to further flesh out.</p>
+
+        <h2>BUILD</h2>
+        <div class = "carousel-cont">
+            <i class="fa-solid fa-caret-left" id = "prev-btn"></i>
+            <i class="fa-solid fa-caret-right" id="next-btn"></i>
+            <div class = "carousel-slide">
+                <img src = "portfolio-prog/4.png" id = "lastClone">
+                <img src = "portfolio-prog/1.png">
+                <img src = "portfolio-prog/2.png">
+                <img src = "portfolio-prog/3.png">
+                <img src = "portfolio-prog/4.png">
+                <img src = "portfolio-prog/1.png" id = "firstClone">
+            </div>
+        </div>
+
+
+
+        <h2>REFLECTION</h2>
+        <h4><b>design</b></h4>
+        <p>i did ponder for some time about how i would exhibit my artist identity through the visual of the site, from the general framework to the small details and everything in between. i went through a few iterations of what kind of visual style to follow, but i ended up turning to basic color and minimalist principles. I also received some feedback regarding type hierarchy and accessibility, and so making the changes and stuff was very helpful and useful for future projects.</p>
+        <br>
+        <h4><b>build</b></h4>
+        <p>while coming up with the design was a fast&nbsp; process, developing it was a different story...&nbsp; &nbsp;i ran into a few roadblocks throughout the process. i did have a head start since i began working on it in the middle of the summer, but i have not touched it since and my ideas in terms of the layout and such have changed since then. throughout these past few weeks, i encountered quite a few roadblocks with debugging code issues dealing with functionality, most notably the side menu feature. figuring out the logistics behind the necessary javascript and then trying to apply that into my own vision was quite the hassle. although it still is not perfect, i am glad about the progress and am looking forward to dissecting it further. in addition, i underwent a few iterations of how i wanted the content of the works pages to be laid out, and then trying to use the newly learned concept of flexbox to materialize said idea. i definitely struggled with using flexbox at first, since it was a concept i just learned, but working on this project enabled myself to become more comfortable with it and now i think i have a better grasp of flexbox.
+        </p>
+        <br>
+        <h4><b>conclusion</b></h4>
+        <p>overall, i am happy with the appearance and functionality of the website so far given the constraints of time and knowledge. an aspect of the site I am particularly proud of is the initial page where the user clicks through the elements before scrolling is enabled. Is it impractical? maybe. But i think it adds fun interactivity and also the process behind executing this feature makes me feel more accomplished about this feature. i am very glad we were given this opportunity to work on something that is practical and necessary for showcasing our identities as artists and makers. as of now, i plan on continuing to work on building the site, adding more features and cleaning up the design a bit more. but i definitely will use this site in the future to host the evidence of my artistic endeavors and send out to job applications while also using it to portray myself to others as part of my identity. i truly had a lot of fun working on this project and it has further increased my already big interest in the world of programming and web design!</p>
+
+        
+    </div>
+    <script src = "carousel.js"></script>
+</body>
+</html>

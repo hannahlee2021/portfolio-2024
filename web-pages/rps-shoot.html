@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Rock Paper Scissor SHOOT!</title>
+</head>
+<body>
+    <nav>
+        <div class = "nav-cont"> 
+            <a href="../index.html"><span style="color:#0051FF;"><h2>web</h2></span></a>
+            <a href="#"><h2>ux</h2></a>
+            <a href="#"><h2>p5js</h2></a>
+            <a href="#"><h2>misc.</h2></a>
+            <a href="#"><h2>about</h2></a>
+            
+            
+        </div>  
+    </nav>
+
+    <div class = "cont-1">
+        <h1 id = "title">rock paper scissor SHOOT!</h1>
+        <video width="720" height="450" controls>
+            <source src="rps-shoot-prog/video-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+            <a href="https://hannahlee2021.github.io/api-use-user/"><h3>check me out ;+ 
+            </h3></a>
+            <h3><span style="font-size:15px; color:#f80807">api is expired on render so it is not working 100%... T-T</span></h3>
+            <h3>date: december 2023</h3>
+            <h3>tools: html, css, js [vanilla + node.js]</h3>
+    </div>
+
+    <div class = "cont-2">
+        <h2>OVERVIEW</h2>
+        <h4><b>what is it?</b></h4>
+        <p>an online game where the user and computer play each other in a match of rock, paper, scissors.</p>
+        <h4><b>intent</b></h4>
+        <p>to use a classmate’s created API and integrate it into a website.</p>
+
+        <h2>DESIGN</h2>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 600px; height: 300px;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Ffile%2FPw3RyClN3BBxtFHah5FaZo%2Fapi-use-website%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DW5KTywHzaaqC5mT8-1" allowfullscreen=""></iframe>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 600px; height: 300px;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FPw3RyClN3BBxtFHah5FaZo%2Fapi-use-website%3Ftype%3Ddesign%26node-id%3D64-4%26t%3Dx1OFYEtAGbdSdeRV-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D27%253A71%26mode%3Ddesign" allowfullscreen="" class=""></iframe>
+        <br>
+        <br>
+        <p>i was inspired by retro arcade games and wanted to sort of integrate that spirit into the digitization of a usually physical game through shape and lines. i also was thinking about how to visualize the rock, paper, and scissor and so felt that having it simple and clean would fit the concept best. i designed these components on figma using the vector tools. the main premise of this work was about integrating the API my class partner created, and so the design process revolved around that. </p>
+
+        <h2>BUILD</h2>
+        <div class = "carousel-cont">
+            <i class="fa-solid fa-caret-left" id = "prev-btn"></i>
+            <i class="fa-solid fa-caret-right" id="next-btn"></i>
+            <div class = "carousel-slide">
+                <img src = "rps-shoot-prog/5.png" id = "lastClone">
+                <img src = "rps-shoot-prog/1.png">
+                <img src = "rps-shoot-prog/2.png">
+                <img src = "rps-shoot-prog/3.png">
+                <img src = "rps-shoot-prog/4.png">
+                <img src = "rps-shoot-prog/5.png">
+                <img src = "rps-shoot-prog/1.png" id = "firstClone">
+            </div>
+        </div>
+
+
+
+        <h2>REFLECTION</h2>
+        <h4><b>design</b></h4>
+        <p>i had a bit of a time constraint for this piece, so the design process was quite rushed. however, i am glad that the ideas flowed smoothly and i was able to create the design pretty fast so that i can devote more time into the building portion.</p>
+        <br>
+        <h4><b>build</b></h4>
+        <p>the process of building was a bit more of a challenge. while laying out the html and css went smoothly, integrating the API was quite the hassle. this was a topic i had only recently learned, and so i had a hard time figuring out the technicalties and such. however, after a lot of searching, iterating, and debugging with my professor, i was able to integrate it smoothly and pull the data.
+        </p>
+        <br>
+        <h4><b>conclusion</b></h4>
+        <p>overall, i am happy with the final product of the site, especially in the context of the time limits. this site, from the design to the final product, took roughly a day. while i wish i had more time to invest in order to make the site more complex, i am proud of myself for being able to work around the limitations and create something tangible. i also learned a lot throughout the process in terms of technical skills and working under pressure, so it was a rewarding experience.</p>
+
+        
+    </div>
+    <script src = "carousel.js"></script>
+</body>
+</html>

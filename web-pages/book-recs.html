@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title> Books From Me ⮂ You </title>
+</head>
+<body>
+    <nav>
+        <div class = "nav-cont"> 
+            <a href="../index.html"><span style="color:#0051FF;"><h2>web</h2></span></a>
+            <a href="#"><h2>ux</h2></a>
+            <a href="#"><h2>p5js</h2></a>
+            <a href="#"><h2>misc.</h2></a>
+            <a href="#"><h2>about</h2></a>
+            
+            
+        </div>  
+    </nav>
+
+    <div class = "cont-1">
+        <h1 id = "title">books from me ⮂ you</h1>
+        <video width="720" height="450" controls>
+            <source src="book-recs-prog/book-site.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+            <a href="https://hannahlee2021.github.io/uxui-midterm-proj/"><h3>check me out ;+ 
+            </h3></a>
+            
+            <h3>date: march 2024</h3>
+            <h3>tools: html, css, js [vanilla + p5.js]</h3>
+    </div>
+
+    <div class = "cont-2">
+        <h2>OVERVIEW</h2>
+        <h4><b>what is it?</b></h4>
+        <p>a site that recommends nyt bestsellers based on date and genre!
+        </p>
+        <h4><b>intent</b></h4>
+        <p>to find new books to read and satisfy a curiosity for what kind of books trend on certain days ... !</p>
+
+        <h2>DESIGN</h2>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 600px; height: 300px;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Ffile%2FrUK6EQtJ026yIjMpUR9DXf%2Fuxui-midterm%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DngoiqeRdIR13KRuH-1" allowfullscreen="" class=""></iframe>
+        <<iframe style="border: 1px solid rgba(0, 0, 0, 0.1); width: 600px; height: 300px;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2FrUK6EQtJ026yIjMpUR9DXf%2Fuxui-midterm%3Ftype%3Ddesign%26node-id%3D23-120%26t%3DiitlH1mdstFkAjHp-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D23%253A120%26mode%3Ddesign" allowfullscreen=""></iframe>
+        <br>
+        <br>
+        <p> i took inspiration from the emotions i feel when i am reading, which is calm but also exuberant from the adventure i dive into with every chapter. 
+            for me, a colorful yet muted palette seemed to reflect the sort of abstract nature of my relationship to this act. i also wanted to engage a lot of negative
+            space within the design, but the cascading rainfall of books (made to look like confetti ^_^ !!) in the home page seemed like a fun way to incorporate movement
+            within the space while also expressing the excitement of finding new adventures to dive into via literary means! </p>
+
+        <h2>BUILD</h2>
+        <div class = "carousel-cont">
+            <i class="fa-solid fa-caret-left" id = "prev-btn"></i>
+            <i class="fa-solid fa-caret-right" id="next-btn"></i>
+            <div class = "carousel-slide">
+                <img src = "book-recs-prog/design 7.png" id = "lastClone">
+                <img src = "book-recs-prog/1 commit.png">
+                <img src = "book-recs-prog/2 commit.png">
+                <img src = "book-recs-prog/third commit.png">
+                <img src = "book-recs-prog/design 1.png">
+                <img src = "book-recs-prog/design 2.png">
+                <img src = "book-recs-prog/design 3.png">
+                <img src = "book-recs-prog/design 4.png">
+                <img src = "book-recs-prog/design 5.png">
+                <img src = "book-recs-prog/design 6.png">
+                <img src = "book-recs-prog/design 7.png">
+                <img src = "book-recs-prog/1 commit.png" id = "firstClone">
+            </div>
+        </div>
+
+
+
+        <h2>REFLECTION</h2>
+        <h4><b>design</b></h4>
+        <p> i won't lie, it has been a while since i made this and at the time, i did not bother to write down any of my thoughts like i did for the others so i am 
+            currently tackling this almost a year later ... but from what i remmeber, i think i struggled most with figuring out what fonts to use. while the header font 
+            is nice, i do think i should have gone with a different font for the subtext.... everything else went pretty smoothly i believe, such as color palette and shapes! 
+            oh and i also designed the <i>generate</i> button to be a stack of books (really feeding into the topic of reading hehe)!
+        </p>
+        <br>
+        <h4><b>build</b></h4>
+        <p> now i can definitely recall the building process being a lot more of a pain.... for starters, it was my first taste of using an api from an actual company (not a classmate's) with a lot more data to sift and pull from,
+            and so it was overwhelming at first to deal with all the data i was getting from the NYT bestsellers API. in addition, i had difficulty trying to position all the different elements to match my design vision on figma, 
+            and to be honest, that was not perfected 100%. despite these challenges though, i found the process quite rewarding and feeling very happy and motivated for every small win achieved!
+        </p>
+        <br>
+        <h4><b>conclusion</b></h4>
+        <p>while if i were to tackle this project now, i may go about it a different way (less categories for the book genres since many of them have no results, different fonts), i am still happy with what i have created at the time! i learned
+            so much through the help of my professor and peers, and also through the sheer act of working through the steps. in addition, i got a good taste of how APIs work and how they can enrich web projects, and so i harnessed a new skill under
+            my belt which was the best part! </p>
+
+        
+    </div>
+    <script src = "carousel.js"></script>
+</body>
+</html>
