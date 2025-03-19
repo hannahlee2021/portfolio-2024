@@ -169,8 +169,23 @@ p {
     flex-direction: row;
     justify-content: space-evenly;
   
-    
+}
 
+.wireframe-cont-2 {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.design-system-cont {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.system-color p {
+    text-align: center;
+    
 }
 
 /* .infest-cont {

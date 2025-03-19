@@ -80,6 +80,15 @@ h2 {
     font-weight: 400;
 }
 
+p {
+    padding-left: 20px;
+    padding-right: 100px;
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    line-height: 50px;
+    
+}
+
 
 
 
@@ -108,4 +117,271 @@ body.hovered a.hovered img {
 }
 
 
+.pane {
+    position: absolute;
+    width: var(--pane-default-width);
+    height: var(--pane-default-height);
+  
+    display: grid;
+    grid-template-rows: var(--title-bar-height) 1fr;
+  
+    border-radius: var(--pane-border-radius);
+    box-shadow: 0 4px 16px rgba(255, 0, 0, 0.5);
+  
+    overflow: clip;
+  
+    min-width: 160px;
+    min-height: 160px;
+    
+  }
+  
+  .pane .title {
+    cursor: move;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: var(--title-bar-color);
+    color: var(--title-bar-text-color);
 
+  }
+  
+  .pane h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  .pane p {
+    font-size: 15px;
+    line-height: normal;
+    padding: 0;
+  }
+ 
+  
+  .pane .content {
+    position: relative;
+    background-color: var(--pane-content-background-color);
+  }
+  
+  /* make image fill the space */
+  .pane .content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  
+    object-fit: cover;
+  
+    -webkit-user-drag: none;
+    user-drag: none;
+  }
+  
+  /* add a corner in bottom right */
+  .pane .corner {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+  
+    /* north west to south east */
+    cursor: nwse-resize;
+  
+    /* background-color: red; */
+  }
+  
+  .pane.is-dragging .title {
+    background-color: var(--title-bar-highlight-color);
+  }
+
+ #resume-title {
+    text-align: center; 
+
+ }
+
+ :root {
+
+  
+    --title-bar-color: blue;
+    --title-bar-text-color: #fff;
+    --title-bar-highlight-color:#2DF400;
+    --title-bar-height: 50px;
+  
+    --pane-content-background-color: #ffffff;
+  
+    --pane-default-width: 320px;
+    --pane-default-height: 360px;
+    --pane-border-radius: 8px;
+  }
+
+  li::marker {
+    content: " ~.✦  ";
+    padding-inline: 1ch;
+    margin-inline-end: 1ch;
+  }
+
+  .links-cont {
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+  #email {
+    width: 75px;
+    height: 75px;
+    margin-left: 20px;
+    border-radius: 50%;
+    animation: move1 10s linear infinite;
+  }
+
+  #linkedin {
+    width: 75px;
+    height: 75px;
+    margin-left: 20px;
+    border-radius: 50%;
+    animation: move2 10s linear infinite;
+  }
+
+  #insta {
+    width: 75px;
+    height: 75px;
+    margin-left: 20px;
+    border-radius: 50%;
+    animation: move3 10s linear infinite;
+  }
+  #github {
+    width: 75px;
+    height: 75px;
+    margin-left: 20px;
+    border-radius: 50%;
+    animation: move4 10s ease-in-out infinite;
+  }
+ 
+  #email p {
+    position: relative;
+    top: 30px;
+    left: 20px;
+  }
+
+  #linkedin p {
+    position: relative;
+    top: 30px;
+    left: 10px;
+  }
+
+  #insta p {
+    position: relative;
+    top: 30px;
+    left: 20px;
+  }
+
+  #github p {
+    position: relative;
+    top: 30px;
+    left: 15px;
+  }
+
+  .links-cont a {
+    color: white;
+  }
+
+  .links-cont a:hover {
+    color: yellow;
+  }
+  @keyframes move1 {
+    0% {
+    background-color: red;
+    }
+    100% {
+      background-color: blue;
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg);
+      translate: 100px 100px;
+      
+    }
+  }
+  @keyframes move2 {
+    0% {
+    background-color: blue;
+    }
+    100% {
+      background-color: #2DF400;
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg);
+      translate: -49px 159px;
+      
+    }
+  }
+
+  @keyframes move3 {
+    0% {
+    background-color: #2DF400;
+    }
+    /* 50% {
+      translate: 60px 110px;
+    } */
+    100% {
+      background-color: orange;
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg);
+      translate: 32px 140px;
+      
+    }
+  }
+
+  @keyframes move4 {
+    0% {
+    background-color: black;
+    }
+    100% {
+      background-color: red;
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg);
+      translate: 80px -100px;
+      
+    }
+  }
+
+  @keyframes spin 
+  { 100% { -webkit-transform: rotate(360deg); 
+    transform:rotate(360deg);
+   } }
+
+ form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 20%;
+ }
+   
+   #textbox {
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid red;
+  
+   }
+   
+
+
+   button {
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+   }
+
+  .img {
+    width: 50%;
+  }
