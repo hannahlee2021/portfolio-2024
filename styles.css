@@ -385,3 +385,10 @@ body.hovered a.hovered img {
   .img {
     width: 50%;
   }
+
+  #blank-block {
+    width: 400px;
+    height:400px;
+    background-color: white;
+    border-radius: 50%;
+  }
