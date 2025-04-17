@@ -395,6 +395,7 @@ body.hovered a.hovered img {
 
 /* Bottom Sidebar Navigation - Circle with adjacent menu */
 .bottom-sidebar {
+  cursor: grab;
   position: fixed;
   bottom: 50%;
   left: 20px;
@@ -420,24 +421,26 @@ body.hovered a.hovered img {
   font-weight: bold;
 }
 
-.sidebar-nav {
+#sidebar-nav {
   position: absolute;
   left: 90px; /* Position to the right of the circle */
  
   border-radius: 10px;
   padding: 10px 15px;
   opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s;
+ 
+  /* visibility: hidden; */
+  /* transition: opacity 0.3s ease, visibility 0.3s; */
   white-space: nowrap;
 }
 
-.bottom-sidebar:hover .sidebar-nav {
+/* .bottom-sidebar:active #sidebar-nav {
   opacity: 1;
   visibility: visible;
-}
+} */
 
-.sidebar-nav ul {
+
+#sidebar-nav ul {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -445,14 +448,15 @@ body.hovered a.hovered img {
   padding: 0;
 }
 
-.sidebar-nav li {
+#sidebar-nav li {
   margin: 8px 0;
 }
 
 
 
 
-.sidebar-nav a {
+#sidebar-nav a {
+  cursor: grabbing;
   color: black;
   text-decoration: none;
   font-family: "Exo 2", sans-serif;
@@ -464,7 +468,8 @@ body.hovered a.hovered img {
   display: block;
 }
 
-.sidebar-nav a:hover {
+#sidebar-nav a:hover {
+  
   background-color: rgba(255, 255, 255, 0.2);
   color:#2DF400;
 }
