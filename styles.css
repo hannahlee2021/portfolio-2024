@@ -146,6 +146,21 @@ body.hovered a.hovered img {
     color: var(--title-bar-text-color);
 
   }
+
+  #subtitle-1 {
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;  
+    font-weight: 400;
+    position: fixed;
+    top: 60vh; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+    text-align: center;
+
+}
+
   
   .pane h2 {
     font-size: 1.5rem;
@@ -157,6 +172,7 @@ body.hovered a.hovered img {
     line-height: normal;
     padding: 0;
   }
+  
  
   
   .pane .content {
@@ -409,7 +425,7 @@ body.hovered a.hovered img {
   align-items: center;
 }
 
-/* Menu icon */
+
 .bottom-sidebar::before {
   content: "≡";
   position: absolute;
@@ -423,7 +439,7 @@ body.hovered a.hovered img {
 
 #sidebar-nav {
   position: absolute;
-  left: 90px; /* Position to the right of the circle */
+  left: 90px; 
  
   border-radius: 10px;
   padding: 10px 15px;
@@ -474,14 +490,6 @@ body.hovered a.hovered img {
   color:#2DF400;
 }
 
-/* Add a subtle arrow pointing to the circle */
-/* .sidebar-nav::before {
-  content: "";
-  position: absolute;
-  left: -10px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-width: 10px 10px 10px 0;
-  border-style: solid;
 
-} */
+
+
