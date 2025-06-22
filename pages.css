@@ -53,6 +53,10 @@ h3 {
     line-height: 20px;
 }
 
+@media screen {
+    
+}
+
 h4 {
     font-family: "Exo 2", sans-serif;
     font-weight: 600;
@@ -108,6 +112,19 @@ p {
 
 #sketch {
     padding-left: 20px;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.photo-gallery img {
+    width: 80%;
+    height: 100%;
+    object-fit:cover;
+    border: 1px solid #0051FF;
 }
 
 .carousel-cont {
