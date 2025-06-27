@@ -1,6 +1,6 @@
 const sidebar = document.querySelector('.bottom-sidebar');
 const content = document.getElementById('sidebar-nav');
-const mobileNav = document.querySelector('.mobile-nav-cont');
+const mobileNav = document.querySelector('.logo-nav');
 const mobileContent = document.getElementById('mobile-nav');
 
 sidebar.addEventListener('click', function() {

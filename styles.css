@@ -33,7 +33,7 @@ nav {
     display: none;
 }
 
-.mobile-nav-cont img {
+.logo-nav {
   position: absolute;
   top: 30px;
   z-index: 2000;
