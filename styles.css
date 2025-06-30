@@ -5,6 +5,112 @@ body {
     
 }
 
+/* mobile section */
+.mobile-nav-top-cont h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #2DF400;
+  font-style: italic;
+}
+
+
+
+.mobile-nav-cont {
+    display: none;
+    border: 1px solid blue;
+}
+
+.logo-nav {
+  position: absolute;
+  top: 30px;
+  padding-left: 10px;
+  z-index: 2000;
+}
+
+
+#mobile-nav {
+  position: absolute;
+  opacity: 0;
+  background-color: #0051FF;
+  width: 100%;
+  height: 100%;  
+}
+
+#mobile-nav h2 {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 300;
+  color: white;
+}
+
+#mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#mobile-nav li::marker {
+  content: "";
+}
+
+
+#mobile-nav a:active { 
+  color:#2DF400;
+}
+.mobile-section {
+  display: none;
+}
+.mobile-whole-cont {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+
+#mobile-entry-cont{
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.entry-right {
+  flex-direction: row-reverse;
+}
+
+#mobile-entry-cont img {
+  border: 1px solid red;
+  width: 120px;
+
+}
+
+#mobile-entry-cont h2 {
+  font-size: 30px;
+}
+
+
+@media screen and (max-width: 425px) {
+  .nav-cont {
+    display:none;
+  }
+
+  .mobile-nav-cont {
+    display: block;
+}
+  .mobile-section {
+    display:block
+  }
+
+
+
+.desktop {
+  display: none;
+}
+}
+/* desktop section */
+
 nav {
     position: fixed;  /* or 'sticky' depending on your needs */
     top: 0;
@@ -21,66 +127,6 @@ nav {
 }
 
 
-
-.mobile-nav-top-cont h2 {
-  text-align: center;
-  font-size: 40px;
-}
-
-
-
-.mobile-nav-cont {
-    display: none;
-}
-
-.logo-nav {
-  position: absolute;
-  top: 30px;
-  z-index: 2000;
-}
-
-
-#mobile-nav {
-  position: absolute;
-  opacity: 0;
-  background-color: #0051FF;
-  width: 100%;
-  height: 100%;
-  
-}
-
-#mobile-nav h2 {
-  color: white;
-}
-
-#mobile-nav ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-}
-
-
-
-
-#mobile-nav a:active {
-  
- 
-  color:#2DF400;
-}
-
-
-
-
-@media screen and (max-width: 425px) {
-  .nav-cont {
-    display:none;
-  }
-
-  .mobile-nav-cont {
-    display: block;
-}
-}
 
  a {
     color: #2DF400;
