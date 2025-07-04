@@ -15,7 +15,10 @@ const checkScreenSize = () => {
         if (isPanEnabled) {
             // Re-enable panning
             document.addEventListener("mousemove", move)
-            tween()
+            // Only start tween if it's not already running
+            if (!animationId) {
+                tween()
+            }
         } else {
             // Disable panning
             document.removeEventListener("mousemove", move)
@@ -55,8 +58,8 @@ checkScreenSize()
 // Listen for window resize
 window.addEventListener('resize', checkScreenSize)
 
-// Only start if panning is enabled
-if (isPanEnabled) {
+// Only start if panning is enabled and not already running
+if (isPanEnabled && !animationId) {
     tween()
     document.addEventListener("mousemove", move)
 }

@@ -1,4 +1,3 @@
-
 //variable declarations
 
 //icons
@@ -16,7 +15,31 @@ let icon_hair2 = [];
 let icon_hair3 = [];
 let icon_hair4 = [];
 
+// Check if screen size allows sketch
+let isSketchEnabled = true;
 
+// Check if screen size allows sketch
+const checkScreenSize = () => {
+    const shouldEnable = window.innerWidth >= 440;
+    if (shouldEnable !== isSketchEnabled) {
+        isSketchEnabled = shouldEnable;
+        if (isSketchEnabled) {
+            // Re-enable sketch
+            loop();
+            // Show canvas
+            if (canvas) {
+                canvas.style.display = 'block';
+            }
+        } else {
+            // Disable sketch
+            noLoop();
+            // Hide canvas
+            if (canvas) {
+                canvas.style.display = 'none';
+            }
+        }
+    }
+};
 
 //loading + declaring image files
 function preload(){
@@ -35,30 +58,29 @@ function preload(){
 function setup() {
   createCanvas(windowWidth, windowHeight);
   
+  // Check initial screen size
+  checkScreenSize();
+  
+  // Listen for window resize
+  window.addEventListener('resize', checkScreenSize);
+  
   //declaring randomized placements of each icon
-    for (let i = 0; i < iconNum; i++){
-    
+  for (let i = 0; i < iconNum; i++){
     hair1[i] = new Hair(random(windowWidth),random(windowHeight));
     hair2[i] = new Hair2(random(windowWidth), random(windowHeight));
     hair3[i] = new Hair3(random(windowWidth), random(windowHeight));
     hair4[i] = new Hair4(random(windowWidth), random(windowHeight));
-
-      
-    }
-
-
-
-  
+  }
 }
 
 function draw() {
-
+  // Only run if sketch is enabled
+  if (!isSketchEnabled) return;
+  
   background(255)
 
   //calling the function where everything that happens is defined
-      scene0();
-
-
+  scene0();
 }
 
 //assigning what happens in scene 0 (aka the content)

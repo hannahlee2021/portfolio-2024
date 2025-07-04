@@ -5,7 +5,7 @@ let isPanesEnabled = true
 
 // Check if screen size allows pane interactions
 const checkScreenSize = () => {
-    const shouldEnable = window.innerWidth > 425
+    const shouldEnable = window.innerWidth >= 440
     if (shouldEnable !== isPanesEnabled) {
         isPanesEnabled = shouldEnable
         if (isPanesEnabled) {
