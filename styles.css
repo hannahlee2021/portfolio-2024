@@ -31,13 +31,14 @@ body {
 #mobile-nav {
   position: absolute;
   opacity: 0;
+  pointer-events: none;
   background-color: #0051FF;
   width: 100%;
   height: 100%;  
 }
 
 #mobile-nav h2 {
-  font-size: 40px;
+  font-size: 30px;
   font-style: italic;
   font-weight: 300;
   color: white;
@@ -87,9 +88,25 @@ body {
 }
 
 #mobile-entry-cont h2 {
-  font-size: 30px;
+  font-size: 10px;
+  
+ 
+
 }
 
+#mobile-entry-cont h3 {
+  font-size: 10px;
+ 
+}
+
+#mobile-entry-cont a {
+  color: black;
+}
+
+#mobile-entry-cont a:hover {
+  
+  text-decoration-line: underline;
+}
 
 @media screen and (max-width: 425px) {
   .nav-cont {
@@ -186,6 +203,12 @@ h1 {
 h2 {
     font-family: "Exo 2", sans-serif;
     font-weight: 400;
+}
+
+h3 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 300;
+  
 }
 
 p {
