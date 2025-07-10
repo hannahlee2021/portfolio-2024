@@ -11,6 +11,112 @@
     <title>Scent as Narrative</title>
 </head>
 <body>
+
+      <!---MOBILE INTERFACE-->
+
+      <div class = "mobile-nav-cont" >
+        <div class = "mobile-nav-top-cont">
+            <h2>featured!</h2>
+            <img class = "logo-nav" src = "../icons/nav-logo.svg">
+        </div>
+        <nav id = "mobile-nav" class = "hidden">
+          
+            <ul>
+                <li><a href="#"><h2><u>featured!</u></h2></a></li>
+                <li><a href="web.html"><h2>web</h2></a></li>
+                <li><a href="ux-home.html"><h2>ux</h2></a></li>
+                <li><a href="p5js-home.html"><h2>p5js</h2></a></li>
+                <li><a href="misc.html"><h2>misc.</h2></a></li>
+                <li><a href="about.html"><h2>about</h2></a></li>
+        </nav>
+    </div>
+
+    <div class = "mobile-section">
+        <div class = "mobile-whole-cont">
+           <div id = "header-cont">
+            <h1>scent as narrative</h1>
+            <video width="313" height="161" controls>
+                <source src="scent-narr-prog/scent-narr-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div id = "subtitle">
+                <h3>date: may 2024</h3>
+                <h3>tools: procreate, html, css, js [vanilla], openAI & gemini pro vision/flash API</h3>
+            </div>
+           </div>
+
+           <div id = "overview-cont">
+                <h2>overview</h2>
+                <h4>what is it?</h4>
+                <p>a perfume recommender + storyteller based on a user's descriptive & visual inputs</p>
+                <h4>intent</h4>
+                <p>to serve as a fun tool for discovering new perfumes and attaching a narrative based on the user!</p>
+           </div>
+
+           <div class = "process-cont">
+           <h2>design</h2>
+           <iframe 
+           style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="100%" 
+           src="https://embed.figma.com/design/46gewkb3pGNNYAePbzQxrt/uxui-final-perfume-ai?node-id=0-1&embed-host=share" allowfullscreen>
+        </iframe>
+
+           <h2>build</h2>
+             <div class = "photo-gallery">
+                <img src = "scent-narr-prog/gemini-1.png">
+                <img src = "scent-narr-prog/gemini-2.png">
+                <img src = "scent-narr-prog/3.png">
+                <img src = "scent-narr-prog/4.png">
+                <img src = "scent-narr-prog/5.png">
+                <img src = "scent-narr-prog/6.png">
+            </div>
+
+        </div>
+
+            <div class = "reflection-cont">
+            <h2>reflection</h2>
+            <h4>design</h4>
+            <p>i definitely had a lot of fun working out the visuals of the piece! while it is clear i had a lot of different
+                ideas (as seen in the figma file), each iteration i felt built upon each other to create something a little newer,
+                a little fresher each time.</p>
+            </div>
+
+            <h4>build</h4>
+
+            <span style="color:red; font-weight:300;"><p>OPENAI</p></span>
+            
+            <p>this process has been a bit of a big rollercoaster (think king da ka).... the openAI API was quite daunting for me to use,
+            since it was not as straightforward as the NYT one, and i was still quite new to incorporating APIs into my projects. I did 
+            run into a lot of roadblocks in trying to get the API to work, but i still remember the feeling of excitement and awe i felt 
+            when i got my first ever response from the API. from that point on, it was a mix of figuring out how to better steer my prompts 
+            so that it would give me better answers, and then also integrating my envisoned design into the mix. </p>
+            <br>
+           <span style="color:red; font-weight:300;"><p>GEMINI PRO VISION/FLASH</p></span> 
+            <p>
+                after some time with openAI's API, i thought it would be so cool to also incorporate the same principle of <i>text to perfume rec +
+                    story</i> via an image as the input instead of text. and this was around when gemini pro vision was still kind of new and all the rage (may 2024),
+                and when i saw that it was able to do image analysis, i thought it would be a great tool to make my idea happen. however.... not all goes to plan,
+                since i was not able to successfully integrate the model.... i ended up putting it aside for quite a while, and only revisited this project around early january 2025
+                after coming across it on my desktop again. with a few months of extra wisdom up my sleeve, i decided it was time to tackle this again. and turns out, gemini pro vision 
+                was deprecated (rip) and gemini flash was the new kid on the block. and i will not lie, i also encountered a lot of roadblocks in this new attempt (constant 503 errors, server errors, etc), but at last, the model 
+                gave me exactly what i wanted.  
+            </p>
+
+            <h4>conclusion</h4>
+            <p>overall, i am happy with how much i learned from this project. while it did take a long break in between start and finish, i am proud of myself for not completely 
+                abandoning the piece. i got the chance to learn a lot of new things, like integrating ngrok so that the server on my local laptop can be accessed online, and also
+            just a better understanding of how to use AI APIs in my project. seeing the capabilities of AI in web projects, even for something as trivial as this, it makes me super excited to
+            experiment more with AI in my future endeavors!          
+        </p>
+
+
+        </div>
+    </div>
+
+    <!---DESKTOP INTERFACE-->
+
+    <div class = "desktop">
+
+   
     <nav>
         <div class = "nav-cont"> 
             <a href="../index.html"><h2>featured!</h2></a>
@@ -118,7 +224,10 @@
 
         
     </div>
-    <script src = "../carousel.js"></script>
+
+    </div>
+    <!-- <script src = "../carousel.js"></script> -->
+    <script src = "../mobileNav.js"></script>
 </body>
 
 </html>
